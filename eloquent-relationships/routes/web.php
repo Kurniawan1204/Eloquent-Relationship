@@ -13,6 +13,13 @@ Route::get('/', function () {
 Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 
 /**
+ * @path /users
+ * @method GET
+ */
+Route::get('/add', [\App\Http\Controllers\UserController::class, 'index']);
+
+
+/**
  * @path /posts
  * @method GET
  */
